@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main { public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("What is your name? ");
+    String name = input.nextLine();
+
+    System.out.print("How old are you? ");
+    int age = input.nextInt();
+
+    System.out.println("Hello, " + name + "!");
+    System.out.println("You are " + age + " years old.");
+
+    if (age >= 18) {
+        System.out.println("You are an adult.");
+    } else {
+        System.out.println("You are under 18.");
+    }
+
+    input.close();
+}
+}
